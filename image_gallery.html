@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Image Gallery</h1>
+        <div class="gallery">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/024/903/855/small_2x/vibrant-autumn-maple-leaves-falling-outdoors-in-november-generated-by-ai-free-photo.jpg" alt="Image 1" onclick="openModal(0)">
+            <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/calm-lake-surface-in-fall-free-image.jpeg?w=600&quality=80" alt="Image 2" onclick="openModal(1)">
+            <img src="https://static.vecteezy.com/system/resources/previews/048/995/990/non_2x/autumn-reflections-over-calm-lake-with-colorful-trees-in-misty-mountains-free-photo.jpeg" alt="Image 3" onclick="openModal(2)">
+            <img src="https://t3.ftcdn.net/jpg/08/45/89/26/360_F_845892641_2m17p2d4pXXPTQ8biFum77hQrXrA9jOx.jpg" alt="Image 4" onclick="openModal(3)">
+            <img src="https://studyinturkey.com/wp-content/uploads/2021/05/istanbul1.jpg" alt="Image 5" onclick="openModal(3)">
+            <img src="https://media.istockphoto.com/id/514325748/photo/bosphorus-bridge-during-the-sunset-istanbul.jpg?s=612x612&w=0&k=20&c=yas55PBl8t8HZKbXam2gis6UTiU9R8Wm5PwIXf0EKH0=" alt="Image 4" onclick="openModal(3)">
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
